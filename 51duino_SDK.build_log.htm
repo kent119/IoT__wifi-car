@@ -1,0 +1,88 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.14.2
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Cortex-M3, Microsoft, LIC=CZV74-F0JZI-19YG6-DKBKM-W7ZG9-XTRGV
+ 
+Tool Versions:
+Toolchain:       PK51 Prof. Developers Kit  Version: 9.54
+Toolchain Path:  C:\Keil_v5\C51\BIN
+C Compiler:      C51.exe V9.54
+Assembler:       A51.exe V8.02c
+Linker/Locator:  BL51.exe V6.22
+Library Manager: LIB51.exe V4.30.1.0
+Hex Converter:   OH51.exe V2.7.0.0
+CPU DLL:         S8051.DLL V3.100.0.0
+Dialog DLL:      DP51.DLL V2.62.0.1
+    Target DLL: VDM51.dll
+Dialog DLL:      TP51.DLL V2.58
+ 
+<h2>Project:</h2>
+D:\AllProjects\GitHub\wifi-car\51duino_SDK.uvproj
+Project File Date:  11/14/2015
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+compiling main.c...
+compiling motor.c...
+Source\motor.c(181): warning C206: 'ARMShow': missing function-prototype
+Source\motor.c(182): warning C206: 'HeadShow': missing function-prototype
+compiling timer.c...
+compiling uart.c...
+compiling SelfTest.c...
+compiling Servo.c...
+Source\Servo.c(70): warning C173: missing return-expression
+Source\Servo.c(71): warning C173: missing return-expression
+Source\Servo.c(73): warning C291: not every exit path returns a value
+compiling Ultrasonic.c...
+Source\Ultrasonic.c(55): warning C291: not every exit path returns a value
+compiling LCD_12864.c...
+compiling Light.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_FORBARRIER?MOTOR
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_UART_SEND?UART
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SEND_DISTANCE?ULTRASONIC
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DIS_STRING1?LCD_12864
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DIS_BMP?LCD_12864
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LCD_INIT?LCD_12864
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CLEAR_TXT?LCD_12864
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CLEAR_BMP?LCD_12864
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?IR_REC?IR
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?IR_TRA?IR
+*** WARNING L15: MULTIPLE CALL TO SEGMENT
+    SEGMENT: ?PR?INIT_STEER?SERVO
+    CALLER1: ?PR?UART_INTERRUPT_RECEIVE?UART
+    CALLER2: ?C_C51STARTUP
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ARMSHOW
+    MODULE:  motor.obj (MOTOR)
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  HEADSHOW
+    MODULE:  motor.obj (MOTOR)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ARMSHOW
+    MODULE:  motor.obj (MOTOR)
+    ADDRESS: 0E20H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  HEADSHOW
+    MODULE:  motor.obj (MOTOR)
+    ADDRESS: 0E23H
+Program Size: data=92.3 xdata=203 code=4577
+creating hex file from "51duino_SDK"...
+"51duino_SDK" - 0 Error(s), 21 Warning(s).
+</pre>
+</body>
+</html>
